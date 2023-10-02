@@ -37,6 +37,26 @@
         display: block;
         margin: 0 auto;
       }
+      /*CSS addition to change format of page
+      */
+      body {
+      background-color: #FAF6F2;
+      }
+      h1 {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 5.2rem;
+        text-align:center;
+      }
+      h1, h2, h3, h4 {
+        color:#683B2B;
+      }
+      p {
+        color:#B08401;
+      }
+      ul li{
+        color:#683B2B;
+      }
+
     </style>
   </head>
   <body>
@@ -44,8 +64,10 @@
 
       LIST ANY CITATIONS HERE
 
-        * A
-        * B
+      Kirby Wiki. (n.d.). Kirby. Kirby Wiki. https://kirby.fandom.com/wiki/Kirby
+      
+      Super Smash Bros. Ultimate Wiki. (n.d.). Kirby (SSBU). Super Smash Bros. Ultimate Wiki. https://www.ssbwiki.com/Kirby_(SSBU)
+
 
     -->
 
@@ -55,6 +77,169 @@
 
     -->
 
-    <h1>Assignment 01 - To Be Completed</h1>
+    <!--Main page content-->
+    <!--Header-->
+    <header>
+      <h1>Kirby Fan Club</h1>
+      <img
+        src="kirby.png"
+        alt="Illustrated graphic of Kirby character"/>
+      
+      <nav>
+        <h2>Site Menu</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#join">Join the Club</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Who is Kirby?</h2>
+
+      <section>
+        <h3>Table of contents</h3>
+
+        <ul>
+          <li><a href="#profile">Kirby's Profile</a></li>
+          <li><a href="#abilities">Kirby's Abilities</a></li>
+          <li><a href="#features">Kirby's Features</a></li>
+          <li><a href="#smash">Super Smash Bros</a></li>
+          <li><a href="#ya">Kirby: Right Back at Ya!</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="profile">Kirby's Profile</h2>
+        <p>Kirby is a beloved iconic video game character created by Nintendo. 
+          The adorable pink character is known for his demanding appetite, 
+          which allows him to inhale enemies and gain their powers. 
+          Kirby's design is simply charming.This allows him to star in a variety of platforming adventures, 
+          most notably his debut game in 1992, Kirby's Dream Land. 
+          Kirby is our pink round hero, that's come to save us all.
+        </p>
+
+        <section>
+          <h3 id="abilities">Kirby's Abilities</h3>
+          <p>Kirby's most known for his ability to inhale enemies and gain their powers. 
+          Some other notable abilities include:
+          </p>
+
+          <ul>
+            <li style="color:#B08401">Fire - Breath fire or shoot fireballs at enemies</li>
+            <li style="color:#B08401">Water - Shoot water streams and utilize aquatic-themed abilities</li>
+            <li style="color:#B08401">Ice - Freeze enemies with icy breath and create ice projectiles</li>
+            <li style="color:#B08401">Stone - Turns into a heavy object to crush enemies</li>
+            <li style="color:#B08401">Fighter - Kirby gains martial arts moves and powerful melee attacks</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 id="features">Kirby's Features</h3>
+          <p>Kirby has been featured in a variety of Nintendo's video games throughout the years, 
+            and in almost all of which, he plays the main role. Kirby games include: Kirby's Dream Land,
+            the Kirby Fighters series, Kirby's Pinball Land, Kirby Battle Royale, and so much more.
+          </p>
+        </section>
+
+        <section>
+            <h4 id="smash">Super Smash Bros</h4>
+            <p>Kirby has also been featured in Nintendo's Super Smash Bros, 
+              a crossover fighting video game containing all sorts of video game characters such as Mario,
+              Zelda, Pokemon, and more. Kirby's character features his many skills and powers. 
+              Gamers love to play Kirby for his ability to inhale other characters and imitate their powers.
+            </p>
+
+            <img
+              src="smash-kirby.png"
+              alt="Kirby from Super Smash Bros game"/>
+
+        </section>
+
+        <section>
+            <h4 id="ya">Kirby: Right Back at Ya!</h4>
+            <p>Kirby also has his very own animated television series. 
+              The Japanese animated show ran from 2001 to 2003 and consisted of 100 episodes,
+              and revolved around Kirby's Dream Land. The show follows Kirby's adventures,
+              as he makes friends and fights foes through his journey.
+            </p>
+
+            <img
+              src="kirby-ya.png"
+              alt="Kirby: Right Back at Ya! Anime"/>
+        </section>
+      </section>
+
+      <section>
+        <h2 id="about">About Us</h2>
+        <p>The Kirby Fan Club is a free-to-join club that gathers Kirby fans from all around the world
+          to simply chat about the topic of Kirby, and anything else relating to the pink, lovable ball.
+            Founded in October of 2023, the Kirby Fan Club has reached tens of hundreds of people all over Barrhaven.
+            The club has hopes to grow and continue to spread the positivity and joy that Kirby brings to us.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="join">Join the Kirby Fan Club</h2>
+
+        <p>*By joining the Kirby Fan Club, you're agreeing to handing over your debit and credit card information to the founder.
+        </p>
+
+        <!--Form-->
+        <form style="color:#683B2B">
+          <fieldset>
+            <legend>Personal Information:</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Bob Dylan" required/>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="bob.dylan@gmail.com" required/>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(613) 000-0000"/>
+          </fieldset>
+
+          <fieldset>
+            <legend>Debit/Credit Card Information</legend>
+
+            <label for="card">Card Number:</label>
+            <input type="tel" id="card" name="card"  placeholder="5415 9052 3492"/>
+
+            <label for="date">Expiration Date:</label>
+            <input type="text" id="date" name="date" placeholder="02/25"/>
+
+            <label for="security">Security Number</label>
+            <input type="text" id="security" name="security" placeholder="123"/>
+          </fieldset>
+
+          <fieldset>
+            <legend>Agreement</legend>
+
+            <input type="checkbox" id="agree" name="agree" required />
+            <label for="agree">I agree to hand over my personal information to become a member of the Kirby Fan Club.</label>
+
+            <input type="submit" value="Submit"/>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Site Footer</h2>
+      <img
+        src="kirby-logo.png"
+        alt="Kirby Logo"/>
+      <nav>
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Join the Club</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2023</p>
+    </footer>
   </body>
 </html>
